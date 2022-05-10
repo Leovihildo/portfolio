@@ -1,0 +1,1335 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+}
+nav ul{
+    padding: 8px;
+    color: #fff;
+}
+div.small{
+    background-color: black;
+}
+.navbar{
+    z-index: 9;
+    width: 100%;
+}
+nav.sticky{
+    position: fixed;
+    top: 0;
+}
+.offcanvas-bottom{
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+.pull-left{
+    float: left;
+}
+hr{
+    background-color: #fff;
+}
+.navbar-toggler{
+    font-size: .9rem;
+}
+.navbar-dark .navbar-toggler{
+    border-color: transparent;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.nav-item a.active{
+    color: #000 !important;
+    background-color: #fff;
+}
+/* Main-content */
+.main-content{
+    position: relative;
+}
+.main-content h2{
+    margin: 150px auto 30px;
+    text-align: center;
+    width: 80%;
+    /* font-size: 2em; */
+}
+#btn-up{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    bottom: 10%;
+    right:10%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #000;
+}
+.call{
+    width: 250px;
+    height: 70px;
+    background-color: cyan;
+    margin: 0 auto 30px;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 1px 2px 0 0 #000;
+}
+.call a{
+    color: #0d5a64;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.profile{
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+/* Content-2 */
+#content2{
+    background-color: #00203f;
+    width: 100%;
+    margin: 50px auto;
+    padding: 30px;
+}
+.vision{
+    opacity: 0;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#content2 h3{
+    text-transform: uppercase;
+    color: #adefd1;
+    font-weight: bold;
+    margin-top: 50px;
+}
+#content2 h5{
+    font-size: 24px;
+    color: #fff;
+}
+#content2 h3, h3.lang, .exp h3, .intro h3, #content3 h3,
+.sum>h3{
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.vision img{
+    width: 250px;
+    height: 250px;
+    /* padding: 50px; */
+    margin: 20px auto;
+}
+.vision h4{
+    font-size: 22px;
+    color: orchid;
+}
+.motivation ul{
+    width: 100%;
+}
+#atat ul li, #rgl ul li{
+    text-align: justify;
+}
+.vision p, .motivation ul li, #atat ul li, #rgl ul li{
+    padding: 5px;
+    color: #5b84b1;
+}
+.vision p{
+    text-align: justify;
+}
+.motivation ul li, #atat ul li, #rgl ul li{
+    width: 100%;
+    float: left;
+}
+.motivation ul li::marker, #atat ul li::marker, 
+#rgl ul li::marker{
+    color: #fff;
+    font-size: 23px;
+}
+
+/* Content-3 */
+#content3, .sum{
+    margin: 50px auto;
+    text-align: center;
+}
+#content3 .services{
+    margin: 20px 0;
+}
+#content3{
+    /* font-size: 1.5em; */
+    margin: 0 auto;
+}
+#content3 .services p{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px auto;
+}
+/* Form - content-4 */
+#message{
+    margin-bottom: 50px;
+    background-color: #000;
+    padding: 20px;
+}
+#message form{
+    width: 100%;
+    margin: 20px auto;
+}
+#message form label{
+    color: #fff;
+}
+
+/* footer */
+footer{
+    padding: 10px;
+    margin-top: 170px;
+    position: relative;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+footer h5{
+    font-size: 1.9em;
+    width: 60%;
+    margin: 25px auto;
+}
+footer h6{
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+footer hr{
+    background-color: #000;
+}
+footer a{
+    color: #000;
+}
+footer .contact, footer .social{
+    margin-bottom: 40px;
+}
+.contact, .social{
+    font-size: 13px;
+    padding: 15px;
+}
+.contact span{
+    margin-left: 8px;
+}
+.ig, .fb, .linkd{
+    font-size: 28px;
+    margin: 5px auto;
+}
+.ig a:hover{
+    color: red;
+}
+.linkd a:hover{
+    color: gray;
+}
+#copy{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: .7em;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    background-color: grey;
+    padding: 15px;
+    text-align: center;
+}
+#copy>span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ispan{
+    color: orangered;
+}
+@keyframes transit{
+    0%{
+        opacity: 0;
+        right: 0;
+    }
+    50%{
+        opacity: .5;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotateY(30deg);
+    }
+    20%{
+        transform: rotateY(60deg);
+    }
+    40%{
+        transform: rotateY(120deg);
+    }
+    60%{
+        transform: rotateY(180deg);
+    }
+    80%{
+        transform: rotateY(240deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.animator{
+    animation: transit 3s ease;
+}
+.vision.fadein{
+    animation: fade 3s ease;
+    opacity: 1;
+}
+.spin{
+    animation: spin 2s ease;
+}
+
+/* About page section */
+.pp img{
+    position: absolute;
+}
+.intro{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.hire{
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 1px 2px 3px rgb(184, 255, 181),
+    -1px -1px 3px #000,
+    2px 3px 9px rgb(202, 248, 200),
+    -2px -2px 9px #000,
+    3px 4px 12px rgb(226, 250, 219),
+    -3px -3px 12px #000,
+    4px 5px 18px #fff,
+    -4px -5px 18px #000;
+}
+.vision p, .motivation ul li, #content3 p, 
+.intro p, .exp p, .hire, #atat ul li, nav ul li,
+#rgl ul li, .sum p, .butt{
+    font-size: 17px;
+}
+.contact span{
+    font-size: 14px;
+}
+.exp{
+    clear: both;
+    margin-left: 270px;
+}
+.exp p, .work, .lang{
+     text-transform: uppercase;
+}
+.first, .second{
+    padding: 20px;
+    margin: 30px auto;
+    text-align: centre;
+}
+.first a>p:hover, .second a>p:hover{
+    color: #adefd1 !important;
+}
+#atat, #rgl{
+    display: none;
+}
+.btn_trans{
+    background-color: transparent;
+    border: none;
+}
+.btn_trans>p:hover, .btn_trans>p:focus{
+    color: #adefd1 !important;
+}
+.edu{
+    transition: all 2s ease;
+}
+.edu:hover, .edu:focus, .edu:active{
+    box-shadow: 0 8px 7px -5px #000;
+    transform: scale(1.1);
+    z-index: 10;
+}
+/* .sum{
+    margin: 60px ;
+} */
+.skills, .sum p{
+    text-align: justify;
+    /* padding: 50px; */
+}
+.sum{
+    margin-bottom: 60px;
+}
+.skills svg{
+    margin: 40px;
+}
+.skills h6{
+    font-size: 1.2em !important;
+}
+.skills span{
+    font-size: 17px;
+    margin-left: -40px;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5,
+    -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93,
+    -3px 2px #cdd2d5;
+}
+.lang{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.butt{
+    margin: 30px auto;
+    width: 160px;
+    font-weight: bold;
+}
+.en{
+    background-color: rgb(49, 240, 49);
+}
+.esp{
+    background: linear-gradient(to right, rgb(49, 240, 49) 50%, #ff0000 50%);
+}
+/* portfolio page section */
+.graphic{
+    position: relative;
+    margin: 15px auto;
+}
+.graphic > .prev, .graphic > .next{
+    font-weight: 800;
+    cursor: pointer;
+}
+.carousel-item{
+    width: 100%;
+    height: auto;
+}
+#tile1, #graph1, #graph2, #graph3, #graph4{
+    width: 480px;
+    background-size: 100% 100%;
+    object-fit: cover;
+    margin: 35px auto;
+    position: relative;
+    border: 2px solid grey;
+}
+#tile1{
+    height: 470px;
+}
+#graph1, #graph2, #graph3, #graph4{
+    height: 615px;
+}
+#tile1 span, #graph1 span, #graph2 span, #graph3 span, #graph4 span{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-size: 18px;
+    opacity: .9;
+}
+.design{
+    cursor: pointer;
+}
+.hidden-p{
+    display: none;
+}
+#tile1{
+    background: url("../images/Graphics/Mysite_480.jpg") no-repeat;
+    background-position: center;
+}
+#graph1{
+    background: url("../images/Graphics/REA_med.jpg") no-repeat;
+    background-position: center;
+}
+#graph2{
+    background: url("../images/Graphics/Spring_med.jpg") no-repeat;
+    background-position: center;
+}
+#graph3{
+    background: url("../images/Graphics/Lenascakes_med.jpg") no-repeat;
+    background-position: center;
+}
+#graph4{
+    background: url("../images/Graphics/Omono_480.jpg") no-repeat;
+    background-position: center;
+}
+
+/* for large screens */
+@media (min-width: 1200px){
+    .nav-item a.active:hover{
+        transform: none !important;
+    }
+    .nav-item a:hover{
+        transform: scale(1.1);
+    }
+    div.small{
+        background-color: transparent;
+    }
+    .drop{
+        color: #000;
+    }
+    .main-content h2{
+        width: 100%;
+        font-size: 3em;
+        text-align: center;
+    }
+    .profile img{
+        width: 420px;
+        height: 420px;
+    }
+    #content2{
+        text-align: center;
+    }
+    /* #content3 h4, .vision h4, .sum h4{
+        font-size: 1.4em;
+    } */
+    .motivation ul{
+        display: flex;
+        list-style-position: inside;
+        padding-left: .2em;
+        margin-left: 0.2em;
+    }
+    .motivation ul > li{
+        padding: 5px;
+        margin-right: 20px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .motivation ul li::marker{
+        font-size: 35px;
+        margin-right: 0px;
+    }
+    #message{
+        font-size: 19px;
+        width: 100%;
+    }
+    .intro{
+        top: 46%;
+        left: 25%;
+    }
+    .exp{
+        top: 73%;
+        left: 33%;
+    }
+    /* .pp{
+        top: 0%;
+       left: 46%; 
+    } */
+    .pp img{
+        top: -7%;
+        left: 47%; 
+        width: 560px;
+        height: 550px;
+    }
+    /* .hire{
+        height: 25px;
+    } */
+    #btn-up{
+        width: 45px;
+        height: 45px;
+        font-size: 23px;
+    }
+    #copy{
+        font-size: .9em;
+    }
+    #tile1, #graph1, 
+    #graph2, #graph3, #graph4{
+        width: 900px;
+        height: 615px;
+    }
+    /* #tile1{
+        height: 557px;
+    } */
+    #tile1{
+        background: url("../images/Graphics/Mysite_1200.jpg") no-repeat;
+    }
+    #graph1{
+        background-image: url("../images/Graphics/REA_1200.jpg");
+    }
+    #graph2{
+        background-image: url("../images/Graphics/Spring_1200.jpg");
+    }
+    #graph3{
+        background-image: url("../images/Graphics/Lenascakes_1200.jpg");
+    }
+    #graph4{
+        background-image: url("../images/Graphics/Omono_1200.jpg");
+    }
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 18px;
+        padding: 13px;
+    }
+    /* #tile1{
+        background: url("mysite_large.png");
+    } */
+    .carousel-item{
+        margin-bottom: 80px;
+    }
+    /* .first, .second{
+        border: none;
+    } */
+}
+/* for medium-large screens */
+@media (min-width: 992px) and (max-width: 1199px){
+    .nav-item a.active:hover{
+        transform: none !important;
+    }
+    .nav-item a:hover{
+        transform: scale(1.1);
+    }
+    div.small{
+        background-color: transparent;
+    }
+    .drop{
+        color: #000;
+    }
+    .main-content h2{
+        width: 100%;
+        font-size: 2.8em;
+        text-align: center;
+    }
+    #content2 h3, h3.lang, .exp h3, .intro h3, #content3 h3,
+    .sum>h3{
+        font-size: 1.4em;
+    }
+    .vision h4{
+        font-size: 21px;
+    }
+    .profile img{
+        width: 420px;
+        height: 420px;
+    }
+    #content2{
+        text-align: center;
+    }
+    .motivation ul{
+        display: flex;
+        /* list-style-position: inside; */
+        padding-left: 1.2em;
+        /* margin-left: 0.1em; */
+    }
+    .motivation ul > li{
+        padding: 5px;
+        margin-right: 50px;
+    }
+    .vision p, .hire, .motivation ul li, 
+    #content3 p, .intro p, .exp p, .sum p, #atat ul li, 
+    #rgl ul li, nav ul li{
+        font-size: 17px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .motivation ul li::marker{
+        font-size: 35px;
+    }
+    #message{
+        font-size: 19px;
+        width: 100%;
+    }
+    #btn-up{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    footer h5{
+        font-size: 1.6em;
+    }
+    footer h6{
+        font-size: 15px;
+    }
+    .skills h6{
+        font-size: 1.1em !important;
+    }
+    .contact span{
+        font-size: 13px;
+    }
+    .ig, .fb, .linkd{
+        font-size: 22px;
+    }
+    .pp img{
+        top: 3%;
+        left: 43%;
+        width: 520px;
+        height: 480px;
+    }
+    /* #tile1, #graph1, 
+    #graph2, #graph3{
+        width: 900px;
+        height: 618px;
+    }
+  #tile1{
+      background: url("images/Graphics/mysite_largemed.png") no-repeat;
+  } */
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 16px;
+        padding: 12px;
+    }
+    .graphic{
+        margin-bottom: 60px;
+    }
+}
+/* for medium-large screens 2 */
+@media (min-width: 768px) and (max-width: 991px){
+    nav ul li{
+        font-size: 17px;
+    }
+    .drop{
+        color: #000;
+    }
+    .main-content>h2{
+        text-align: center;
+        width: 100%;
+        font-size: 2.6em;
+    }
+    .call{
+        width: 320px;
+    }
+    .call>a{
+        font-size: 23px;
+    }
+    .profile img{
+        width: 420px;
+        height: 420px;
+    }
+    #content2 h3, h3.lang, .exp h3, .intro h3, 
+    #content3 h3, .sum>h3{
+        font-size: 1.3em;
+    }
+    /* .motivation ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    } */
+    .vision{
+        margin-top: 60px;
+    }
+    .vision p, .hire, .motivation ul li, #content3 p, 
+    .intro p, .exp p, .sum p, #atat ul li, #rgl ul li{
+        font-size: 16px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .motivation ul li::marker, #atat ul li::marker, 
+    #rgl ul li::marker{
+        font-size: 33px;
+    }
+    .vision h4{
+        font-size: 19px;
+    }
+    #message{
+        font-size: 19px;
+        width: 100%;
+    }
+    #content2 h5{
+        font-size: 21px;
+    }
+    footer h5{
+        font-size: 1.4em;
+    }
+    footer h6{
+        font-size: 17px;
+    }
+    .skills h6{
+        font-size: 1.1em !important;
+    }
+    /* .row h6{
+        font-size: 18px;
+    } */
+    .contact span{
+        font-size: 13px;
+    }
+    .ig, .fb, .linkd{
+        font-size: 21px;
+        width: 100%;
+    }
+    .pp img{
+        top: 13%;
+        left: 42%;
+        width: 440px;
+        height: 420px;
+    }
+    .exp{
+        margin-left: 180px;
+    }
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span{
+        font-size: 16px;
+        padding: 12px;
+    }
+    .graphic{
+        margin-bottom: 60px;
+    }
+}
+/* for medium screens */
+@media (min-width: 692px) and (max-width: 767px){
+    .pp img{
+        top: 28%;
+        left: 47%;
+        width: 360px;
+        height: 350px;
+    }
+    .exp{
+        margin-left: 90px;
+    }
+    #content2 h3, h3.lang, .exp h3, .intro h3, 
+    #content3 h3, .sum>h3{
+        font-size: 1.3em;
+    }
+    .vision p, .hire, .motivation ul li, #content3 p, 
+    .intro p, .exp p, .sum p, #atat ul li, #rgl ul li,
+    nav ul li{
+        font-size: 14px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .vision h4{
+        font-size: 18px;
+        text-align: center;
+    }
+    .vision img{
+        width: 220px;
+        height: 220px;
+        /* padding: 50px; */
+    }
+    #message{
+        font-size: 16px;
+        width: 100%;
+    }
+    #content2 h5{
+        font-size: 17px;
+    }
+    footer h5{
+        font-size: 1.6em;
+    }
+    footer h6{
+        font-size: 15px;
+    }
+    .skills h6{
+        font-size: 1em !important;
+    }
+    .contact span, .butt{
+        font-size: 13px;
+    }
+    .butt{
+        width: 140px;
+    }
+    .ig, .fb, .linkd{
+        font-size: 20px;
+    }
+    /* .pp{
+        padding: 100px;
+    } */
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 15px;
+        padding: 12px;
+    }
+    .graphic{
+        margin-bottom: 58px;
+    }
+}
+@media (min-width: 576px) and (max-width: 691px){
+    .pp img{
+        top: 40%;
+        left: 46%;
+        width: 320px;
+        height: 310px;
+    }
+    .exp{
+        margin-left: 90px;
+        margin-top: -20px;
+    }
+    #content2 h3, h3.lang, .exp h3, .intro h3, 
+    #content3 h3, .sum>h3{
+        font-size: 1.2em;
+    }
+    .vision p, .hire, .motivation ul li, #content3 p, 
+    .intro p, .exp p, .sum p, #atat ul li, #rgl ul li{
+        font-size: 14px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .vision h4{
+        font-size: 18px;
+        text-align: center;
+    }
+    .vision img{
+        width: 220px;
+        height: 220px;
+        /* padding: 50px; */
+    }
+    #message{
+        font-size: 16px;
+        width: 100%;
+    }
+    #content2 h5{
+        font-size: 16px;
+    }
+    footer h5{
+        font-size: 1.5em;
+    }
+    footer h6{
+        font-size: 17px;
+    }
+    .skills h6{
+        font-size: 1em !important;
+    }
+    .contact span, .butt{
+        font-size: 14px;
+    }
+    .butt{
+        width: 135px;
+    }
+    .ig, .fb, .linkd{
+        font-size: 22px;
+    }
+    .pp{
+        padding: 100px;
+    }
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 14px;
+        padding: 12px;
+    }
+    #tile1, #graph1, 
+    #graph2, #graph3, #graph4{
+        width: 500px;
+        height: 538px;
+    }
+    #tile1{
+        background: url("../images/Graphics/Mysite_500.jpg") no-repeat;
+    }
+    #graph1{
+        background-image: url("../images/Graphics/REA_500.jpg");
+    }
+    #graph2{
+        background-image: url("../images/Graphics/Spring_500.jpg");
+    }
+    #graph3{
+        background-image: url("../images/Graphics/Lenascakes_500.jpg");
+    }
+    #graph4{
+        background-image: url("../images/Graphics/Omono_500.jpg");
+    }
+    .graphic{
+        margin-bottom: 58px;
+    }
+}
+/* for small screens */
+@media (min-width: 481px) and (max-width: 575px){
+    #content2 h3, h3.lang, .exp h3, .intro h3, 
+    #content3 h3, .sum>h3{
+        font-size: 1.2em;
+    }
+    .vision p, .hire, .motivation ul li, #content3 p, 
+    .intro p, .exp p, .sum p, #atat ul li, #rgl ul li{
+        font-size: 14px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .vision h4{
+        font-size: 19px;
+        text-align: center;
+    }
+    .vision img{
+        width: 220px;
+        height: 220px;
+        /* padding: 50px; */
+    }
+    #message{
+        font-size: 17px;
+        width: 100%;
+    }
+    #content2 h5{
+        font-size: 18px;
+    }
+    footer h5{
+        font-size: 1.4em;
+    }
+    footer h6{
+        font-size: 16px;
+    }
+    .skills h6{
+        font-size: 1em !important;
+    }
+    .contact span, .butt{
+        font-size: 14px;
+    }
+    .butt{
+        width: 135px;
+    }
+    .ig, .fb, .linkd{
+        font-size: 20px;
+    }
+    .pp{
+        padding: 100px;
+    }
+    .pp img{
+        top: 47%;
+        left: 33%;
+        width: 320px;
+        height: 310px;
+    }
+    .exp{
+        margin-left: 45px;
+    }
+    #btn-up{
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 14px;
+        padding: 10px;
+    }
+    #tile1, #graph1, 
+    #graph2, #graph3, #graph4{
+        width: 352px;
+        height: 490px;
+    }
+    #tile1{
+        background: url("../images/Graphics/Mysite_352.jpg") no-repeat;
+    }
+    #graph1{
+        background: url("../images/Graphics/REA_352.jpg") no-repeat;
+    }
+    #graph2{
+        background: url("../images/Graphics/Spring_352.jpg") no-repeat;
+    }
+    #graph3{
+        background: url("../images/Graphics/Lenascakes_352.jpg") no-repeat;
+    }
+    #graph3{
+        background-image: url("../images/Graphics/Omono_352.jpg");
+    }
+    /* #tile1, #graph1, #graph2, #graph3{
+        height: 420px;
+    } */
+    .graphic{
+        margin-bottom: 54px;
+    }
+}
+@media (min-width: 412px) and (max-width: 480px){
+    .profile{
+        height: 200px;
+    }
+    .profile img{
+        width: 250px;
+        height: 300px;
+    }
+    .navbar-toggler{
+        font-size: .7em;
+        margin-right: 15px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+    #content2 h3, h3.lang, .exp h3, .intro h3, 
+    #content3 h3, .sum>h3{
+        font-size: 1.2em;
+    }
+    .vision p, .hire, .motivation ul li, #content3 p, 
+    .intro p, .exp p, .sum p, #atat ul li, #rgl ul li, .butt{
+        font-size: 14px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .vision h4{
+        font-size: 19px;
+        text-align: center;
+    }
+    .vision img{
+        width: 220px;
+        height: 220px;
+        /* padding: 50px; */
+    }
+    #message{
+        font-size: 16px;
+        width: 100%;
+    }
+    #content2 h5{
+        font-size: 18px;
+    }
+    footer h5{
+        font-size: 1.3em;
+    }
+    footer h6{
+        font-size: 15px;
+    }
+    .skills h6{
+        font-size: 1em !important;
+    }
+    .contact span{
+        font-size: 12px;
+    }
+    .butt{
+        width: 130px;
+    }
+    .ig, .fb, .linkd{
+        font-size: 19px;
+    }
+    .pp{
+        padding: 100px;
+    }
+    .pp img{
+        top: 51%;
+        left: 27%;
+        width: 300px;
+        height: 290px;
+    }
+    .exp{
+        margin-left: 30px;
+    }
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 13px;
+        padding: 10px;
+    }
+    #tile1, #graph1, 
+    #graph2, #graph3, #graph4{
+        width: 340px;
+        height: 480px;
+    }
+    #tile1{
+        background: url("../images/Graphics/Mysite_340.jpg") no-repeat;
+    }
+    #graph1{
+        background: url("../images/Graphics/REA_340.jpg") no-repeat;
+    }
+    #graph2{
+        background: url("../images/Graphics/Spring_340.jpg") no-repeat;
+    }
+    #graph3{
+        background: url("../images/Graphics/Lenascakes_340.jpg") no-repeat;
+    }
+    #graph4{
+        background-image: url("../images/Graphics/Omono_340.jpg");
+    }
+    /* #tile1, #graph1, #graph2, #graph3{
+        height: 400px;
+    } */
+    .graphic{
+        margin-bottom: 54px;
+    }
+}
+/* for very small screens */
+@media (min-width: 321px) and (max-width: 411px){
+    .profile{
+        height: 150px;
+    }
+    .profile img{
+        width: 200px;
+        height: 250px;
+    }
+    nav ul li{
+        font-size: 14px;
+    }
+    #content2 h3, h3.lang, .exp h3, .intro h3, 
+    #content3 h3, .sum>h3{
+        font-size: 1.1em;
+    }
+    .vision p, .hire, .motivation ul li, #content3 p, 
+    .intro p, .exp p, .sum p, #atat ul li, #rgl ul li, .butt{
+        font-size: 13px;
+    }
+    .exp{
+        margin-left: 15px;
+    }
+    .vision p{
+        margin: 0 auto 40px;
+    }
+    .vision h4{
+        font-size: 18px;
+        text-align: center;
+    }
+      #content2 h5{
+        font-size: 16px;
+    }
+    footer h5{
+        font-size: 1.3em;
+    }
+    footer h6{
+        font-size: 15px;
+    }
+    .skills h6{
+        font-size: .95em !important;
+    }
+    .contact span{
+        font-size: 12px;
+    }
+    .vision img{
+        width: 200px;
+        height: 200px;
+        /* padding: 50px; */
+        margin: 20px auto;
+    }
+    #message{
+        font-size: 16px;
+        width: 100%;
+    }
+    .contact span{
+        font-size: 12px;
+    }
+    .ig, .fb, .linkd{
+        font-size: 18px;
+    }
+    .pp img{
+        width: 255px;
+        height: 250px;
+        top: 54%;
+        left: 20%;
+    }
+    .butt{
+        width: 110px;
+    }
+    #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 12px;
+        padding: 8px;
+    }
+    #tile1, #graph1, 
+    #graph2, #graph3, #graph4{
+        width: 248px;
+        height: 430px;
+    }
+    #tile1{
+        background: url("../images/Graphics/Mysite_248.jpg") no-repeat;
+    }
+    #graph1{
+        background: url("../images/Graphics/REA_240.jpg") no-repeat;
+    }
+    #graph2{
+        background: url("../images/Graphics/Spring_240.jpg") no-repeat;
+    }
+    #graph3{
+        background: url("../images/Graphics/Lenascakes_240.jpg") no-repeat;
+    }
+    #graph4{
+        background-image: url("../images/Graphics/Omono_248.jpg");
+    }
+    .graphic{
+        margin-bottom: 54px;
+    }
+}
+@media (max-width: 320px){
+    .navbar-toggler{
+        font-size: .7em;
+    }
+    nav ul li{
+        font-size: 12px;
+    }
+    .profile{
+        height: 140px;
+    }
+    .profile img{
+        width: 170px;
+        height: 230px;
+    }
+    .pp img{
+        width: 210px;
+        height: 210px;
+        top: 60%;
+        left: 26%;
+    }
+    .exp{
+        margin-left: 15px;
+    }
+    #content2 h3, h3.lang, .exp h3, .intro h3, 
+    #content3 h3, .sum>h3{
+        font-size: 1em;
+    }
+    .vision p, .hire, .motivation ul li, #content3 p, 
+    .intro p, .exp p, .sum p, #atat ul li, #rgl ul li, .butt{
+        font-size: 12px;
+    }
+    .vision img{
+        width: 140px;
+        height: 140px;
+    }
+    #message{
+        font-size: 15px;
+        width: 100%;
+    }
+    .vision h4{
+        font-size: 16px;
+        text-align: center;
+    }
+      #content2 h5{
+        font-size: 15px;
+    }
+    footer h5{
+        font-size: 1.2em;
+    }
+    footer h6{
+        font-size: 14px;
+    }
+    .skills h6{
+        font-size: .9em !important;
+    }
+    .butt{
+        width: 90px;
+        margin: 0 auto;
+    }
+    .ig, .fb, .linkd{
+        font-size: 16px;
+    }
+    .contact span, #tile1 span, #graph1 span, 
+    #graph2 span, #graph3 span, #graph4 span{
+        font-size: 11px;
+    }
+    #tile1, #graph1, 
+    #graph2, #graph3, #graph4{
+        width: 210px;
+        height: 400px;
+    }
+    #tile1{
+        background: url("../images/Graphics/Mysite_210.jpg") no-repeat;
+    }
+    #graph1{
+        background: url("../images/Graphics/REA_210.jpg") no-repeat;
+    }
+    #graph2{
+        background: url("../images/Graphics/Spring_210.jpg") no-repeat;
+    }
+    #graph3{
+        background: url("../images/Graphics/Lenascakes_210.jpg") no-repeat;
+    }
+    #graph4{
+        background-image: url("../images/Graphics/Omono_210.jpg");
+    }
+    .graphic{
+        margin-bottom: 50px;
+    }
+}
